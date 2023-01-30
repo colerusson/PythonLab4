@@ -5,11 +5,9 @@ def main(array):
     # Write to compute the variance and the mean of a given list of numbers
     # Make sure that your terminal output matches the terminal output of the example given on the instructions.
     sumCounter = 0
-    size = len(array)
     for i in array:
         sumCounter += i
-    mean = sumCounter / size
-    return mean
+    return sumCounter / len(array)
 
 
 if __name__ == "__main__":
@@ -22,6 +20,5 @@ if __name__ == "__main__":
     for i in parsedArgs.array:
         squareCounter += (output - i)**2
     variance = squareCounter / len(parsedArgs.array)
-
     print('mean = ' + str(output))
     print('variance = ' + str(variance))
